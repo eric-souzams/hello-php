@@ -3,6 +3,8 @@
 class User
 {
 
+    private $pdo;
+
     public function __construct()
     {
         $this->pdo = new PDO(
