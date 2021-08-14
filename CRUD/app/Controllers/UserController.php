@@ -43,7 +43,7 @@ switch($_POST['userController']) {
         throw new Exception('Para de fazer merda');
 }
 
-function validateRegister(User $user, array $data) 
+function validateRegister(User $user, array $data): array
 {
     $errors = [];
     $userExists = $user->getUser($data['email'], 'email');
@@ -59,7 +59,7 @@ function validateRegister(User $user, array $data)
     return $errors;
 }
 
-function validateLogin(User $user, array $data)
+function validateLogin(User $user, array $data): array
 {
     $errors = [];
     $user = $user->getUser($data['email'], 'email');

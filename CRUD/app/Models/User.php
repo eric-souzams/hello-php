@@ -34,7 +34,7 @@ class User
     /**
      * Trazer apenas dados do usuario autenticado
      */
-    public function getMe()
+    public function getMe(): array
     {
         $query = $this->pdo->prepare(
             "SELECT * FROM users WHERE id = :value"
