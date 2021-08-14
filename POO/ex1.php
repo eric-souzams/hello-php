@@ -39,3 +39,7 @@ else
         }
     }
 }
+echo PHP_EOL;
+$texto = 'Teste de escrita mano velhor';
+
+echo mb_substr($texto, 8, 4);
