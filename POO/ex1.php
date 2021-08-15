@@ -43,3 +43,5 @@ echo PHP_EOL;
 $texto = 'Teste de escrita mano velhor';
 
 echo mb_substr($texto, 8, 4);
+
+echo date('d-m-y H-i-s');
