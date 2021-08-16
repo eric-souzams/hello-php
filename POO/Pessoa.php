@@ -47,3 +47,18 @@ try {
 
 var_dump($eric->getCpf());
 //var_dump($eric);
+
+class Usuario extends Pessoa {
+    public $login;
+    public $password;
+
+    public function __construct($name, $age, $job, $birthDate, $login, $password)
+    {
+        parent::__construct($name, $age, $job, $birthDate);
+
+        $this->login = $login;
+        $this->password = $password;
+
+        echo 'User created.' . PHP_EOL;
+    }
+}
